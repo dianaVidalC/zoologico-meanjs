@@ -1,0 +1,8 @@
+<div class="col-md-12">
+    <h4>{{title}}</h4>
+    <div *ngIf="emailContacto">
+        <strong>Email de contacto:</strong>{{emailContacto}}
+        <button class="btn btn-danger" (click)="borrarEmail()">Eliminar email de
+      contacto</button>
+    </div>
+</div>
