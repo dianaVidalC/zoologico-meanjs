@@ -1,3 +1,22 @@
-<p>
-  store works!
-</p>
+<div class="container mt-5">
+  <div class="row">
+      <a role="button" class="boton_activo btn btn-success" [@marcar]="status" (click)="changeStatus()">Activar Botón</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 mt-5">
+    <h4>Animaciones y transiciones en css3</h4>
+  </div>
+  <div class="col-md-12">
+    <button type="button" class="btn btn-hover">botón</button>
+    <div class="caja-animada">
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 mt-5">
+    <h4>Editor de texto enriquecido</h4>
+    <editor apiKey="x16fr2e2glrrcaaao0kio0wepr6f0j5u1oz39yhris3r6dgv" [init]="{plugins: 'link formatpainter code'}">
+    </editor>
+  </div>
+</div>

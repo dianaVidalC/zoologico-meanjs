@@ -1,0 +1,56 @@
+.btn-hover 
+    width: 200px
+    font-size: 16px
+    font-weight: 600
+    color: #fff
+    cursor: pointer
+    height: 55px
+    text-align:center
+    border: none
+    background-size: 300% 100%
+    border-radius: 50px
+    transition: all .4s ease-in-out
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645)
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75)
+
+.btn:hover
+    background-position: 100% 0
+    transition: all .4s ease-in-out;
+
+.btn-focus
+    outline: none
+
+.caja-animada
+    width: 200px
+    height: 200px
+    background: #30dd8a
+    margin-top: 2rem
+    border: 2px solid #2bb673
+    animation-name: rotation
+    animation-duration: 10s
+    animation-iteration-count: infinite
+
+@keyframes deslizamiento 
+    0 
+        margin-left: 0
+        border-radius: 0
+    50% 
+        margin-left: 400px
+        background: #ed6ea0
+        border-radius: 15px
+    75%
+        border-radius: 1000px
+        background-color: orange
+    100%
+        margin-left: 0
+        background: yellow
+        border-radius: 0
+
+@keyframes rotation 
+    from 
+        margin-left: 0
+        transform: rotate(0deg)
+
+    to 
+        margin-left: 600px
+        transform: rotate(360deg)

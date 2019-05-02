@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.sass']
 })
 export class ListComponent implements OnInit {
-
+  title = 'Listado';
   constructor() { }
 
   ngOnInit() {
